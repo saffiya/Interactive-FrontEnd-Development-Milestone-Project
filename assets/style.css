@@ -1,0 +1,28 @@
+#top-img {
+    background: url(./images/airplane.jpg);
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.opening-text {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1px;
+    color: white;
+    padding-top:380px;
+}
+
+#article-section {
+    background-color: black;
+}
+
+#map {min-height: 360px;}
+

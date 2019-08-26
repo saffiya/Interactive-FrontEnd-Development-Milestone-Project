@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="top-img">
+        <div class="opening-text">
+            <div class="title">World Travel Guide</div>.
+            <p>Use our world travel guide to find the best places to eat, sleep, shop, visit and adventure at!</p>
+            <p>Our travel guide is constantly updated with the hottest places to visit</p>
+            <p>To make everything more personal, we have personal packages</p>
+            <p>Scroll down for more</p>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div id="map"></div>
+    </section>
+    <section id="article-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://edition.cnn.com/travel/article/worlds-best-shopping-cities/index.html">
+                <img src="./assets/images/shop.jpg" alt="Best Places To Shop In The World">   
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.delish.com/food/g3699/the-best-dessert-in-24-countries-around-the-world/">
+                <img src="./assets/images/macaroons.jpg" alt="Best Dessert Places In The World">   
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.world-of-waterfalls.com/top-10-waterfalls/">
+                <img src="./assets/images/waterfall.jpg" alt="Most Popular Waterfalls In The World">   
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://wanderwisdom.com/misc/10-Most-Amazing-Caves-in-the-World">
+                <img src="./assets/images/cave.jpg" alt="Most Incredible Caves In The World">   
+                    </a>
+                </div>
+
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.earthtrekkers.com/10-best-day-hikes-in-the-world/">
+                <img src="./assets/images/2012-landscapes-c2a9-christopher-martin-4648.jpg" alt="Best Destinations To Hike">   
+                    </a>
+                </div>
+
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.partyhardtravel.com/news/top-5-party-destinations-2019/">
+                <img src="./assets/images/party.jpg" alt="Top Party Destinations">   
+                    </a>
+                </div>
+
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.theworlds50best.com/list/1-50-winners">
+                <img src="./assets/images/food.jpg" alt="Best Restaurants In The World">   
+                    </a>
+                </div>
+
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-content">
+                    <a href="https://www.travelrepublic.co.uk/blog/20-best-family-holidays">
+                <img src="./assets/images/family.jpg" alt="Best Family Destinations">   
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="personal-package">
+        <button type="button" class="btn btn-dark btn-lg btn-block">Enquire About Your Personalised Package</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fill this out to enquire your package</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputName">Full Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Sheila Moss" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Destination</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Hawaii" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputType">Type Of Holiday </label>
+                                    <input type="text" class="form-control" id="inputType" placeholder="Beach, Safari, Sightseeing">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputTel">Contact Number</label>
+                                    <input type="number" class="form-control" id="inputTel" placeholder="07869542867" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputStay">Duration Of Stay</label>
+                                    <input type="number" class="form-control" id="inputNumber" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputNumber">Amount of Adults</label>
+                                    <input type="text" class="form-control" id="inputNumber" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputNumber">Amount of Children</label>
+                                    <input type="text" class="form-control" id="inputNumber" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNotes">Notes</label>
+                                    <input type="text" class="form-control" id="inputNotes" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">Find My Package</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section </body>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tZ0mi7kk3vJl-9KpQlc7eyDnv0cA6pk&callback=initMap"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tZ0mi7kk3vJl-9KpQlc7eyDnv0cA6pk&libraries=places&callback"></script> -->
+    <script src="./assets/js/maps.js"></script>
+
+</html>
