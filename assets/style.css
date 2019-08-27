@@ -70,9 +70,9 @@ table {
 }
 
 #listing {
-    position: absolute;
-    width: 200px;
-    height: 470px;
+    position: inherit;
+    width: 400px;
+    height: 100px;
     overflow: auto;
     left: 442px;
     top: 0px;
