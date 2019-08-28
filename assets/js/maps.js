@@ -110,7 +110,7 @@
  function search() {
      var search = {
          bounds: map.getBounds(),
-         types: ['lodging']
+         types: ['lodging restaurant shopping_mall']
      };
 
      places.nearbySearch(search, function(results, status) {
