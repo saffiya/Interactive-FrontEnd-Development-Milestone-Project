@@ -26,10 +26,10 @@
     <section class="container-fluid">
         <div id="map"></div>
     </section>
-    <section id="search">
-        <div class="hotel-search ">
+    <section id="selection">
+        <div class="hotel-search container-fluid ">
             <div id="findhotels">
-                Find hotels in:
+                Find Places in:
             </div>
 
             <div id="locationField">
@@ -53,6 +53,34 @@
                    <option value="us" selected>U.S.A.</option>
                    <option value="uk">United Kingdom</option>
                  </select>
+            </div>
+            <div id="search">
+                <div class="markers">
+                    <label class="radio" for="lodging">Hotels
+                    <input onchange="search()" type="radio" id="loging" name="option" checked="checked" disabled />
+                    <span class="selected"></span>
+                    </label>
+                    <label class="radio" for="restaurant">Restaurants
+                    <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
+                    <span class="selected"></span>
+                    </label>
+                    <label class="radio" for="shopping_mall">Shopping
+                    <input onchange="search()" type="radio" id="shopping_mall" name="option" disabled />
+                    <span class="selected"></span>
+                    </label>
+                    <label class="radio" for="spa">Spa
+                    <input onchange="search()" type="radio" id="spa" name="option" disabled />
+                    <span class="selected"></span>
+                    </label>
+                    <label class="radio" for="art_gallery">Art Gallery
+                    <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
+                    <span class="selected"></span>
+                    </label>
+                    <label class="radio" for="train_station">Train Stations
+                    <input onchange="search()" type="radio" id="train_station" name="option" disabled />
+                    <span class="selected"></span>
+                    </label>
+                </div>
             </div>
         </div>
         <div id="listing">
@@ -171,7 +199,7 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-color">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Fill this out to enquire your package</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -181,33 +209,33 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-                                </div>
                                 <div class="form-group">
                                     <label for="inputName">Full Name</label>
                                     <input type="text" class="form-control" id="inputName" placeholder="Sheila Moss" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Destination</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Hawaii" required>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputType">Type Of Holiday </label>
-                                    <input type="text" class="form-control" id="inputType" placeholder="Beach, Safari, Sightseeing">
-                                </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-4">
                                     <label for="inputTel">Contact Number</label>
                                     <input type="number" class="form-control" id="inputTel" placeholder="07869542867" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress">Destination</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Hawaii" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputType">Type Of Holiday </label>
+                                    <input type="text" class="form-control" id="inputType" placeholder="Beach, Safari">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="inputStay">Duration Of Stay</label>
-                                    <input type="number" class="form-control" id="inputNumber" required>
+                                    <input type="number" class="form-control" id="inputNumber" placeholder="2 nights" required>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputNumber">Amount of Adults</label>
@@ -215,9 +243,11 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputNumber">Amount of Children</label>
-                                    <input type="text" class="form-control" id="inputNumber" required>
+                                    <input type="text" class="form-control" id="inputNumber" placeholder="upto 17 Yrs Old" required>
                                 </div>
-                                <div class="form-group">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
                                     <label for="inputNotes">Notes</label>
                                     <input type="text" class="form-control" id="inputNotes" placeholder="">
                                 </div>

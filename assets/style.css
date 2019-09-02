@@ -34,10 +34,14 @@
 
 #article-section {
     background-color: black;
+    overflow-x: scroll;
 }
 
 #map {
     min-height: 360px;
+}
+#selection {
+    background-color: #e8d1dc;
 }
 
 .article-title {
@@ -52,6 +56,33 @@
 
 #personal-package {
     background-color: #e8d1dc;
+}
+
+.modal-content {
+}
+
+.modal-color {
+    background-color: #212529;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #212529;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-title {
+    color: white;
+}
+
+label {
+    color: white;
 }
 
 html,
@@ -71,7 +102,7 @@ table {
 
 .hotel-search {
     align-items: center;
-    background: #fff;
+    background: #e8d1dc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
