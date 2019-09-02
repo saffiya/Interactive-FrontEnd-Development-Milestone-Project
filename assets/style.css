@@ -40,6 +40,10 @@
 #map {
     min-height: 360px;
 }
+
+.markers {
+    color: black;
+}
 #selection {
     background-color: #e8d1dc;
 }

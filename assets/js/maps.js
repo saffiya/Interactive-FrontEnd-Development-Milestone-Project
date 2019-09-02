@@ -107,10 +107,10 @@
  }
 
  // Search for hotels in the selected city, within the viewport of the map.
- function search() {
+ function search(type) {
      var search = {
          bounds: map.getBounds(),
-         types: ['lodging restaurant shopping_mall spa art_gallery train_station']
+         types: [type]
      };
 
      places.nearbySearch(search, function(results, status) {
