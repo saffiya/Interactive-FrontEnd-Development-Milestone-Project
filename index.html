@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css" type="text/css" />
 </head>
 
 <body>
     <section id="top-img">
-        <div class="opening-text">
-            <div class="title">World Travel Guide</div>.
+        <div class="opening-text opaque-overlay">
+            <div class="title">World Travel Guide</div>
             <p>Use our world travel guide to find the best places to eat, sleep, shop, visit and adventure at!</p>
             <p>Our travel guide is constantly updated with the hottest places to visit</p>
             <p>To make everything more personal, we have personal packages</p>
             <p>Scroll down for more</p>
             <i class="fas fa-angle-down"></i>
         </div>
+
     </section>
     <section class="container-fluid">
         <div id="map"></div>
-        <div class="hotel-search">
+    </section>
+    <section id="search">
+        <div class="hotel-search ">
             <div id="findhotels">
                 Find hotels in:
             </div>
@@ -34,21 +38,21 @@
 
             <div id="controls">
                 <select id="country">
-          <option value="all">All</option>
-          <option value="au">Australia</option>
-          <option value="br">Brazil</option>
-          <option value="ca">Canada</option>
-          <option value="fr">France</option>
-          <option value="de">Germany</option>
-          <option value="mx">Mexico</option>
-          <option value="nz">New Zealand</option>
-          <option value="it">Italy</option>
-          <option value="za">South Africa</option>
-          <option value="es">Spain</option>
-          <option value="pt">Portugal</option>
-          <option value="us" selected>U.S.A.</option>
-          <option value="uk">United Kingdom</option>
-        </select>
+                   <option value="all">All</option>
+                   <option value="au">Australia</option>
+                   <option value="br">Brazil</option>
+                   <option value="ca">Canada</option>
+                   <option value="fr">France</option>
+                   <option value="de">Germany</option>
+                   <option value="mx">Mexico</option>
+                   <option value="nz">New Zealand</option>
+                   <option value="it">Italy</option>
+                   <option value="za">South Africa</option>
+                   <option value="es">Spain</option>
+                   <option value="pt">Portugal</option>
+                   <option value="us" selected>U.S.A.</option>
+                   <option value="uk">United Kingdom</option>
+                 </select>
             </div>
         </div>
         <div id="listing">
@@ -83,7 +87,6 @@
                 </table>
             </div>
         </div>
-
     </section>
     <section id="article-section">
         <h3 class="article-title">Best Articles For Places To Visit Around The World</h3>

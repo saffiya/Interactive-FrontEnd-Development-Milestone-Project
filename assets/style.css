@@ -3,20 +3,33 @@
     height: 600px;
     width: 100%;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .title {
     font-size: 2rem;
+    font-weight: bold;
 }
+
 
 .opening-text {
     text-align: center;
     font-size: 1rem;
     margin-bottom: 1px;
     color: white;
+    padding-top: 250px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #article-section {
@@ -78,4 +91,3 @@ table {
     cursor: pointer;
     overflow-x: hidden;
 }
-
