@@ -35,14 +35,18 @@
 #article-section {
     background-color: black;
     overflow-x: scroll;
+    padding: 0px 0px 0px 0px;
 }
-
 #map {
     min-height: 360px;
 }
 
-.markers {
+.radio {
     color: black;
+    font-weight: bold;
+}
+#findhotels {
+    font-weight: bold;
 }
 #selection {
     background-color: #e8d1dc;
@@ -52,10 +56,6 @@
     font-size: 1.75rem;
     color: white;
     text-align: center;
-}
-
-.article-section {
-    padding: 0px 0px;
 }
 
 #personal-package {
@@ -126,3 +126,7 @@ table {
     cursor: pointer;
     overflow-x: hidden;
 }
+.btn {
+    font-weight: bold;
+}
+

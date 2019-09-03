@@ -19,25 +19,25 @@
             <p>Our travel guide is constantly updated with the hottest places to visit</p>
             <p>To make everything more personal, we have personal packages</p>
             <p>Scroll down for more</p>
-            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-2x fa-angle-down"></i>
         </div>
 
     </section>
-    <section class="container-fluid">
-        <div id="map"></div>
-    </section>
-    <section id="selection">
-        <div class="hotel-search container-fluid ">
-            <div id="findhotels">
-                Find Places in:
+    <section id="selection" class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="map" style="position: relative; overflow: hidden;"></div>
             </div>
-
-            <div id="locationField">
-                <input id="autocomplete" placeholder="Enter a city" type="text" />
-            </div>
-
-            <div id="controls">
-                <select id="country">
+            <div class="col-md-4">
+                <div class="hotel-search container-fluid "></div>
+                <div id="findhotels">
+                    Find Places in:
+                </div>
+                <div id="locationField">
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
+                </div>
+                <div id="controls">
+                    <select id="country">
                    <option value="all">All</option>
                    <option value="au">Australia</option>
                    <option value="br">Brazil</option>
@@ -53,149 +53,142 @@
                    <option value="us" selected>U.S.A.</option>
                    <option value="uk">United Kingdom</option>
                  </select>
-            </div>
-            <div id="search">
-                <div class="markers">
-                    <label class="radio" for="lodging">Hotels
+                </div>
+                <div id="search">
+                    <div class="markers">
+                        <label class="radio" for="lodging">Hotels
                     <input onchange="search('lodging')" type="radio" id="loging" name="option" checked="checked" />
                     <span class="selected"></span>
                     </label>
-                    <label class="radio" for="restaurant">Restaurants
+                        <label class="radio" for="restaurant">Restaurants
                     <input onchange="search('restaurant')" type="radio" id="restaurant" name="option" />
                     <span class="selected"></span>
                     </label>
-                    <label class="radio" for="shopping_mall">Shopping
+                        <label class="radio" for="shopping_mall">Shopping
                     <input onchange="search('shopping_mall')" type="radio" id="shopping_mall" name="option" />
                     <span class="selected"></span>
                     </label>
-                    <label class="radio" for="spa">Spa
+                        <label class="radio" for="spa">Spa
                     <input onchange="search('spa')" type="radio" id="spa" name="option" />
                     <span class="selected"></span>
                     </label>
-                    <label class="radio" for="art_gallery">Art Gallery
+                        <label class="radio" for="art_gallery">Art Gallery
                     <input onchange="search('art_gallery')" type="radio" id="art_gallery" name="option" />
                     <span class="selected"></span>
                     </label>
-                    <label class="radio" for="train_station">Train Stations
+                        <label class="radio" for="train_station">Train Stations
                     <input onchange="search('train_station')" type="radio" id="train_station" name="option" />
                     <span class="selected"></span>
                     </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="listing">
-            <table id="resultsTable">
-                <tbody id="results"></tbody>
-            </table>
-        </div>
-
-        <div style="display: none">
-            <div id="info-content">
-                <table>
-                    <tr id="iw-url-row" class="iw_table_row">
-                        <td id="iw-icon" class="iw_table_icon"></td>
-                        <td id="iw-url"></td>
-                    </tr>
-                    <tr id="iw-address-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Address:</td>
-                        <td id="iw-address"></td>
-                    </tr>
-                    <tr id="iw-phone-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Telephone:</td>
-                        <td id="iw-phone"></td>
-                    </tr>
-                    <tr id="iw-rating-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Rating:</td>
-                        <td id="iw-rating"></td>
-                    </tr>
-                    <tr id="iw-website-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Website:</td>
-                        <td id="iw-website"></td>
-                    </tr>
+            <div id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
                 </table>
             </div>
-        </div>
+            <div style="display: none">
+                <div id="info-content">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Address:</td>
+                            <td id="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Telephone:</td>
+                            <td id="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Rating:</td>
+                            <td id="iw-rating"></td>
+                        </tr>
+                        <tr id="iw-website-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Website:</td>
+                            <td id="iw-website"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
     </section>
     <section id="article-section">
         <h3 class="article-title">Best Articles For Places To Visit Around The World</h3>
         <div class="container-fluid">
             <div class="row">
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://edition.cnn.com/travel/article/worlds-best-shopping-cities/index.html">
-                <img src="./assets/images/shop.jpg" alt="Best Places To Shop In The World">   
+                <img src="./assets/images/shop.jpg" alt="Best Places To Shop In The World" width=230px height=230px>
                     </a>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://www.delish.com/food/g3699/the-best-dessert-in-24-countries-around-the-world/">
-                <img src="./assets/images/macaroons.jpg" alt="Best Dessert Places In The World">   
+                <img src="./assets/images/macaroons.jpg" alt="Best Dessert Places In The World" width=230px height=230px>   
                     </a>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://www.world-of-waterfalls.com/top-10-waterfalls/">
-                <img src="./assets/images/waterfall.jpg" alt="Most Popular Waterfalls In The World">   
+                <img src="./assets/images/waterfall.jpg" alt="Most Popular Waterfalls In The World" width=230px height=230px>   
                     </a>
                 </div>
 
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://wanderwisdom.com/misc/10-Most-Amazing-Caves-in-the-World">
-                <img src="./assets/images/cave.jpg" alt="Most Incredible Caves In The World">   
+                <img src="./assets/images/cave.jpg" alt="Most Incredible Caves In The World" width=230px height=230px>   
                     </a>
                 </div>
-
-                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://www.earthtrekkers.com/10-best-day-hikes-in-the-world/">
-                <img src="./assets/images/2012-landscapes-c2a9-christopher-martin-4648.jpg" alt="Best Destinations To Hike">   
+                <img src="./assets/images/2012-landscapes-c2a9-christopher-martin-4648.jpg" alt="Best Destinations To Hike" width=230px height=230px>   
                     </a>
                 </div>
 
-                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-2 article_imgs">
                     <a href="https://www.partyhardtravel.com/news/top-5-party-destinations-2019/">
-                <img src="./assets/images/party.jpg" alt="Top Party Destinations">   
+                <img src="./assets/images/party.jpg" alt="Top Party Destinations" width=230px height=230px>   
                     </a>
                 </div>
 
-                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-imgs">
                     <a href="https://www.theworlds50best.com/list/1-50-winners">
-                <img src="./assets/images/food.jpg" alt="Best Restaurants In The World">   
+                <img src="./assets/images/food.jpg" alt="Best Restaurants In The World" width=230px height=230px>   
                     </a>
                 </div>
-                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3 col-xl-2 article-imgs">
                     <a href="https://www.travelrepublic.co.uk/blog/20-best-family-holidays">
-                <img src="./assets/images/family.jpg" alt="Best Family Destinations">   
+                <img src="./assets/images/family.jpg" alt="Best Family Destinations" width=230px height=230px>   
                     </a>
                 </div>
-
-
-                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-imgs">
                     <a href="https://www.oars.com/blog/10-best-sea-kayaking-spots-world/">
-                <img src="./assets/images/kayaking.jpg" alt="Best Sea Kayaking Spots In The World">   
+                <img src="./assets/images/kayaking.jpg" alt="Best Sea Kayaking Spots In The World" width=230px height=230px>   
                     </a>
                 </div>
-                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-imgs">
                     <a href="cars.com/en/guides/exploring-the-world/hot-air-balloons/https://www.rental">
-                <img src="./assets/images/hotairballoon.jpg" alt="Best Places To Watch Hot Air balloons">   
+                <img src="./assets/images/hotairballoon.jpg" alt="Best Places To Watch Hot Air balloons" width=230px heigth=230px>   
                     </a>
                 </div>
-                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-imgs">
                     <a href="https://www.smithsonianmag.com/travel/10-worlds-best-snorkeling-destinations-180961622/">
-                <img src="./assets/images/snorkelling.jpg" alt="10 Of The Best Snorkelling Destinations">   
+                <img src="./assets/images/snorkelling.jpg" alt="10 Of The Best Snorkelling Destinations" width=230px height=230px>   
                     </a>
                 </div>
-                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-content">
+                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block col-xl-2 article-imgs">
                     <a href="https://suitcasemag.com/travel/explore/go-wild-the-top-10-safaris-in-the-world/">
-                <img src="./assets/images/safari.jpg" alt="Top 10 Safaris In The World">   
+                <img src="./assets/images/safari.jpg" alt="Top 10 Safaris In The World" width=230px height=230px>   
                     </a>
                 </div>
-
-
             </div>
         </div>
 
     </section>
     <section id="personal-package">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Enquire About Your Personalised Package</button>
+        <button type="button" class="btn btn-lg btn-block btn-text" data-toggle="modal" data-target="#exampleModal">Enquire About Your Personalised Package</button>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -258,7 +251,7 @@
                 </div>
             </div>
         </div>
-    </section </body>
+    </section>
     <footer>
 
     </footer>
@@ -270,5 +263,6 @@
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tZ0mi7kk3vJl-9KpQlc7eyDnv0cA6pk&callback"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tZ0mi7kk3vJl-9KpQlc7eyDnv0cA6pk&libraries=places&callback=initMap" async defer></script>
     <script src="./assets/js/maps.js"></script>
+</body>
 
 </html>
