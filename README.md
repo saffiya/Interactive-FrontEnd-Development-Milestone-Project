@@ -89,14 +89,14 @@ At the end of the page I placed a Personal package section for users to fill in 
 </ul>
 <p> To ensure compatability and responsiveness I also asked friends and family to test it across their devices to make sure it worked properly and was easy to use.</p>
 
-<p>During Testing stages I came across a range of problems with my code most being with my map. 
-Such as:</p>
+<p>During Testing stages I came across a range of problems with my code most being with my map.</p>
+<p>Such as:</p>
 <ul>
 <li>The map wasn’t loading all the places in that area</li>
 <li>The maps filter wasn’t working as planned and instead of just showing a specific thing like restaurants it was showing everything</li>
 <li>As it was my first time adding in an API I tried and tested a few different add ons to my API link in order to make it work as wanted; in the end I added libraries=places&callback=initMap</li>
 <li>The checkboxes alignment weren’t where I wanted them on different screens which was actually a very easy fix</li>
-<li>At times the map would show, but that was due to restrictions placed on the API which I adjusted.</li>
+<li>At times the map would not appear, but that was due to restrictions placed on the API which I adjusted.</li>
 <li>The article section spread over the page leaving large white spaces on the sides of my page which I fixed with a overflow and by adjusting the size of the images on screen </li>
 
 <h3>Deployment</h3>
@@ -109,6 +109,19 @@ The website is deployed using Github</p>
 <li>Click on Clone or download then Download ZIP, This will downloaf the code into a ZIP folder locally on your computer</li>
 <li>Uncompress the ZIP folder</li>
 
-<h3>Credits</h3>
+<h2>Credits</h2>
+
+<h3> Content </h3>
+<p> Most of the JS code was from Google Place Autocomplete Hotel Search </p>
+<p> Articles are all linked to existing articles on google <p>
+
+<h3>Media</h3>
+All images were taken from google using the filter 'free to share and use' section, therefore avoiding any copyright.
+
+<h3>Acknowledgments</h3>
+<p>Google API held alot of very valuable information that i read through multiple times when customizing my map.</p>
+<p>Bootstrap helped me create the button, modal and form</p>
+<p>By using Google images filter section, i was able to get copyright free pictures that were used in my project</p>
+<p>Thanks to font awesome i was able to add an icon into my project </p>
 
 
