@@ -80,8 +80,14 @@ At the end of the page I placed a Personal package section for users to fill in 
 <p>Also on multiple devices:</p>
 <ul>
 <li>Iphone 5-8</li>
+<li>Iphone X </li>
+<li> IPad </li>
+<li>IPad Pro </li>
+<li>Galaxy S5 </li>
+<li>Pixel 2 </li>
+<li> Pixel 2 XL </li>
 </ul>
-<p>To ensure compatability and responsiveness I also asked friends and family to test it across their devices to make sure it worked properly and was easy to use.</p>
+<p> To ensure compatability and responsiveness I also asked friends and family to test it across their devices to make sure it worked properly and was easy to use.</p>
 
 <p>During Testing stages I came across a range of problems with my code most being with my map. 
 Such as:</p>
