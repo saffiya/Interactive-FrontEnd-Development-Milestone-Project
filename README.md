@@ -19,12 +19,12 @@ For instance, the user might want to travel from London to Manchester to Scotlan
 <p>I have created a very simple layout, in hope all users both young and old, will find it easy to navigate.</p>
 
 <h3>Demo</h3>
-Please click on the link below to view my site 
-<href https://saffiya.github.io/Interactive-FrontEnd-Development-Milestone-Project/ >
+<p>Please click on the link below to view my site 
+https://saffiya.github.io/Interactive-FrontEnd-Development-Milestone-Project/</p>
 <h3>UX</h3>
-<p>The goal for this design was to make it as easy as possible to access information on the site, whilst striving for a fun yet simple design; that is easy to navigate and use. The colour palette strives for simplicity. There are three very consistent colours that are seen throughout the site; # charcoal, white and # light pink. The # pink was a shade found in my image and the #charcoal was used as a contrasting colour.</p> 
+<p>The goal for this design was to make it as easy as possible to access information on the site, whilst striving for a fun yet simple design; that is easy to navigate and use. The colour palette strives for simplicity. There are three very consistent colours that are seen throughout the site; #212529, white and #e8d1dc. The #e8d1dc was a shade found in my image and the #212529 was used as a contrasting colour.</p> 
 
-<p>Wireframes can be viewed by this link: <href https://balsamiq.cloud/soofkeb/prgilkf></p>
+<p>Wireframes can be viewed by this link: https://balsamiq.cloud/soofkeb/prgilkf</p>
 
 <p>The following goals are what I wanted to achieve for this website:</p>
 <ul>
