@@ -51,7 +51,6 @@ At the end of the page I placed a Personal package section for users to fill in 
 <li>Markers on the map when clicked or tapped bring up an info window with detailed information about that POI</li>
 <li>The results cards are linked to the map and when clicked or tapped will bring up its respected info window for additional information</li>
 <li>The form has required fields so users have to type in their full name, email etc</li>
-<li>The booking form send the information to an email address using emailJS</li>
 <li>The modal can be closed using the close cross</li>
 </ul>
 <h3>Technologies Used</h3>

@@ -38,6 +38,12 @@
     padding: 0px 0px 0px 0px;
 }
 
+.article_paragraph {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 #map {
     min-height: 360px;
 }
